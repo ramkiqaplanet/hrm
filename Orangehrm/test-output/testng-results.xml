@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55497" started-at="2017-09-14T05:34:58Z" finished-at="2017-09-14T05:35:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="55497" started-at="2017-09-14T05:34:58Z" finished-at="2017-09-14T05:35:54Z">
+      <class name="webdriverExamples.TestNG_Grid">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:webdriverExamples.TestNG_Grid@174b225]" name="SetUp" is-config="true" duration-ms="8814" started-at="2017-09-14T11:04:58Z" finished-at="2017-09-14T11:05:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="ApplicationAccess1()[pri:0, instance:webdriverExamples.TestNG_Grid@174b225]" name="ApplicationAccess1" duration-ms="24394" started-at="2017-09-14T11:05:07Z" finished-at="2017-09-14T11:05:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationAccess1 -->
+        <test-method status="PASS" signature="ApplicationAccess2()[pri:0, instance:webdriverExamples.TestNG_Grid@174b225]" name="ApplicationAccess2" duration-ms="20703" started-at="2017-09-14T11:05:31Z" finished-at="2017-09-14T11:05:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationAccess2 -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:webdriverExamples.TestNG_Grid@174b225]" name="AfterTest" is-config="true" duration-ms="1570" started-at="2017-09-14T11:05:52Z" finished-at="2017-09-14T11:05:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- webdriverExamples.TestNG_Grid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
