@@ -1,0 +1,16 @@
+<!-- <suite name="HRM Automation">
+     <test name="HRM">
+	 <classes>
+	   <class name="p1.Testng"/>
+	 <class name="p1.Testng2"/>
+     </classes>
+   </test>
+</suite> -->
+
+<suite name="HRM Automation">
+ <test name="HRM">
+	 <packages>
+	<package name="p1"/>
+     </packages>
+   </test>
+</suite>
