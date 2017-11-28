@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Suite1" verbose="1" >
+  <test name="Regression1"   >
+    <packages>
+      <package name="maven" />
+   </packages>
+ </test>
+</suite>
+
+<!--   <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+ 	
+   <test name="Regression1">
+    <classes>
+      <class name="maven.ExaMav21"/>
+      <class name="maven.ExaMav22"/>
+    </classes>
+  </test>
+</suite>  -->
+<!-- <suite name="Sample test suite" verbose="1" >
+<test name="Method test casses" preserve-order="false">
+  <classes>
+ 
+    <class name="maven.ExaMav21">
+      <methods>
+        <include name="Setup" />
+     
+      </methods>
+    </class>
+ 
+   
+ 
+  </classes>
+</test>
+</suite>
+  -->
