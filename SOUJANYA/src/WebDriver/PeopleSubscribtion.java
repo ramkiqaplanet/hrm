@@ -28,6 +28,8 @@ public class PeopleSubscribtion {
 		Driver.findElementByXPath("//*[@id='billingAddress.zipPostalCode']").sendKeys("33609");
 		Driver.findElementByXPath("//*[@id='billingAddress.email']").sendKeys("soujanya2939@gmail.com");
 		Driver.findElementByXPath("//*[@id='standardSubmitButton']/button").click();
+		
+		Driver.findElement(By.id("")).click();	
 	}
 
 }
