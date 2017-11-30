@@ -9,7 +9,7 @@ public class KewClass {
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver", "D:\\tet\\Selenium_Demp\\chromedriver.exe");
 		ChromeDriver Brow=new ChromeDriver();
-		//Brow.manage().window().maximize();
+		Brow.manage().window().maximize();
 		WebDriverWait wait=new WebDriverWait(Brow, 30);
 		//pw un
 		Brow.get("http://apps.qaplanet.in/qahrm/login.php");

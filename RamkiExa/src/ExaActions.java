@@ -1,8 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,10 +12,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExaActions
 {
-	public static void main(String[] args) throws Exception {
-		System.setProperty("webdriver.chrome.driver", "D:\\tet\\Selenium_Demp\\chromedriver.exe");
-		ChromeDriver Brow=new ChromeDriver();
+	public static void main(String[] args) throws Exception { 
+		System.setProperty("webdriver.chrome.driver", "D:\\tet\\Selenium_Demp\\chromedriver_win32\\chromedriver.exe");
+		WebDriver Brow=new ChromeDriver();
 		//Brow.manage().window().maximize();
+		//resige the current window to the given dimension
+	/*	System.out.println(Brow.manage().window().getSize());
+		Dimension d = new Dimension(320, 500);
+		Brow.manage().window().setSize(d);*/
 		WebDriverWait wait=new WebDriverWait(Brow, 30);
 		//pw un
 		Brow.get("http://apps.qaplanet.in/qahrm/login.php");
@@ -45,8 +51,11 @@ public class ExaActions
 		if (AddTitle.equals("PIM : Add Employee")){
 			System.out.println("Add Employee displaced");
 			}
-		Brow.findElement(By.id("txtEmpLastName")).sendKeys("ramki");
-		Brow.findElement(By.name("txtEmpFirstName")).sendKeys("krishna");
+		WebElement LastName = Brow.findElement(By.id("txtEmpLastName"));
+		WebElement FirstName = Brow.findElement(By.name("txtEmpFirstName"));
+		LastName.sendKeys("rama");
+		FirstName.sendKeys("krishna");
+		
 		Brow.findElement(By.id("btnEdit")).click();
 		
 		Brow.switchTo().defaultContent();
@@ -72,28 +81,18 @@ public class ExaActions
 				if (EmpInf.equals("Personal Details")){
 					System.out.println("Employee Information");
 				}
-			//rc
+				//rc
+				Brow.findElement(By.xpath(""));
+				//cc
+				Brow.findElement(By.xpath(""));
+			for (int i = 0; i < args.length; i++) {
 				
-			int rc = Brow.findElements(By.xpath("//table[@class='data-table']/tbody/tr")).size();
-			//cc
-			for (int i = 0; i <=rc; i++) {
-				String cc=Brow.findElement(By.xpath("//*[@id='standardView']/table/tbody/tr["+i+"]/td[2]")).getText();
-				Brow.findElement(By.xpath("//*[@id='standardView']/table/tbody/tr["+i+"]/td[2]")).click();
-		if(cc.equals(""))
-			
-		{
-			
-		}
-			
-			
-			
-			
-			
+			}
 			}
 	
 	}
 				
-}
+
 	
 
 
